@@ -65,5 +65,5 @@ To select the menu function, enter a number (1, 2, 3 or other key to return to t
         else:
             flag = False
         time.sleep(2)
-    time.sleep(2)
+    time.sleep(3)
 

@@ -12,7 +12,7 @@ To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n'''
     print('What would you like to do? ')
     n = input()
     if n == '1':
-        flag = True
+        FLAG = True
         for i in model.show_all(data):
             print(', '.join(i))
 
@@ -21,7 +21,7 @@ To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n'''
         state = input('Please, enter the State: ').title()
         data_temp = model.search_markets_loc(data, city, state)
         if len(data_temp) > 0:
-            flag = True
+            FLAG = True
             for i in data_temp:
                 print(', '.join(i))
         else:
@@ -31,7 +31,7 @@ To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n'''
         zip_code = input('Please, enter the zip code: ')
         data_temp = model.search_markets_zip(data, zip_code)
         if len(data_temp) > 0:
-            flag = True
+            FLAG = True
             for i in data_temp:
                 print(', '.join(i))
         else:

@@ -1,12 +1,12 @@
-import model
 import time
+import model
 
 data = model.data
 data_temp = data.copy()
 print('Hello!')
 
 while True:
-    flag = False
+    FLAG = False
     print('''\n1. Show all markets\n2. Find markets by city and State\n3. Find markets by zip\n0. Exit\n
 To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n''')
     print('What would you like to do? ')
@@ -44,7 +44,7 @@ To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n'''
     else:
         print('Input Error!')
 
-    while flag is True:
+    while FLAG is True:
         print('''\n1. Leave feedback\n2. Sort by Name\n3. Sort by city and State\n4. Sort by zip\n5. Delete\n
 To select the menu function, enter a number (1, 2, 3 or other key to return to the main menu) and press Enter:''')
         print('What would you like to do? ')
@@ -63,7 +63,6 @@ To select the menu function, enter a number (1, 2, 3 or other key to return to t
         elif n == '5':
             pass
         else:
-            flag = False
+            FLAG = False
         time.sleep(2)
     time.sleep(3)
-

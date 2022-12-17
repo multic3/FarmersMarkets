@@ -16,7 +16,7 @@ def show_all(dict_file):
 
     Returns:
         dict: The dict object"""
-    return dict_file
+    return list(enumerate(dict_file, 1))
 
 
 def search_markets_loc(dict_file, city, state):

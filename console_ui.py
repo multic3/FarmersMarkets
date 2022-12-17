@@ -13,8 +13,9 @@ To select the menu function, enter a number (1, 2, 3 or 0) and press Enter:\n'''
     n = input()
     if n == '1':
         FLAG = True
-        for i in model.show_all(data):
-            print(', '.join(i))
+        data_temp = model.show_all(data)
+        for i, val in data_temp:
+            print(f"{i}: {', '.join(val)}")
 
     elif n == '2':
         city = input('Please, enter the city: ').title()
